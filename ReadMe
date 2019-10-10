@@ -1,0 +1,6 @@
+Đây là dự án demo cách sử dụng MEDIA trong Django, nội dung bao gồm:
+1. làm quen với file upload.
+2. cách lưu trữ file upload vào trong MEDIA.
+3. hiện thị nội dung ảnh lưu trong MEDIA_URL.
+4. làm quen thư viện xlrd (excel reader).
+5. cách hiển thị nội dung file excel từ file upload.

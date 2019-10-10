@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload File</title>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        car name: <input type="text" name="carname"><br>
+        price: <input type="number" name="price"><br>
+        img: <input type="file" name="myfile" accept="image/png,image/jpeg" required>
+        <button type="submit">upload</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <table>
+            <thead>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Price</td>
+                <td>Image</td>
+            </thead>
+            <tbody>
+                {% for a in car %}
+                    <tr>
+                        <td>{{ a.id }}</td>
+                        <td>{{ a.name }}</td>
+                        <td>{{ a.price }}</td>
+                        <td><img src="/media/{{ a.photo }}" width="50" height="50"></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
